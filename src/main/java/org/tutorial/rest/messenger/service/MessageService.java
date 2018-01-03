@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import org.tutorial.rest.messenger.database.DatabaseClass;
+import org.tutorial.rest.messenger.dao.DatabaseClass;
 import org.tutorial.rest.messenger.model.Message;
 
 

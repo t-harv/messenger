@@ -12,8 +12,8 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import org.tutorial.rest.messenger.service.MessageService;
 import org.tutorial.rest.messenger.model.Message;
+import org.tutorial.rest.messenger.service.MessageService;
 
 @Path("/messages")
 @Consumes(MediaType.APPLICATION_JSON)

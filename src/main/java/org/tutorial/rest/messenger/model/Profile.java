@@ -2,10 +2,14 @@ package org.tutorial.rest.messenger.model;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
+@Entity
 public class Profile {
 
+	@Id
 	private long id;
     private String profileName;
     private String firstName;
