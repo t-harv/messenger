@@ -62,13 +62,12 @@
 			<version>3.12.1.GA</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.carlspring.maven/derby-maven-plugin -->
+		<!-- https://mvnrepository.com/artifact/org.apache.derby/derbyclient -->
 		<dependency>
-			<groupId>org.carlspring.maven</groupId>
-			<artifactId>derby-maven-plugin</artifactId>
-			<version>1.10</version>
+			<groupId>org.apache.derby</groupId>
+			<artifactId>derbyclient</artifactId>
+			<version>10.14.1.0</version>
 		</dependency>
-
 
 	</dependencies>
 	<properties>

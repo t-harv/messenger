@@ -27,5 +27,6 @@ public class HibernateDriver {
 			ex.printStackTrace();
 
 		}
+		System.out.println("BOOSH!");
 	}
 }

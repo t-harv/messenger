@@ -5,7 +5,8 @@
 <hibernate-configuration>
     <session-factory>
         <property name="hibernate.connection.driver_class">org.apache.derby.jdbc.ClientDriver</property>
-        <property name="hibernate.connection.url">jdbc:derby://localhost:1527/MyDB</property>
+        <!-- <property name="hibernate.connection.url">jdbc:derby:/home/toyan/MyDB;create=true</property>  -->
+        <property name="hibernate.connection.url">jdbc:derby://localhost:1527/MyDB;create=true</property>
         <property name="hibernate.connection.username">toyan</property>
         <property name="hibernate.connection.password">turpleP420</property>
         <property name="hibernate.connection.pool_size">1</property>
