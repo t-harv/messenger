@@ -6,7 +6,7 @@
 	<groupId>org.tutorial.rest</groupId>
 	<artifactId>messenger</artifactId>
 	<packaging>war</packaging>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>messenger</name>
 
 	<build>
@@ -69,7 +69,21 @@
 			<version>10.14.1.0</version>
 		</dependency>
 
+		<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc6</artifactId>
+			<version>11.2.0.3</version>
+		</dependency>
+
 	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>codelds</id>
+			<url>https://code.lds.org/nexus/content/groups/main-repo</url>
+		</repository>
+	</repositories>
+
 	<properties>
 		<jersey.version>2.16</jersey.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

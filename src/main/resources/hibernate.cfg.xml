@@ -4,16 +4,15 @@
 "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
-        <property name="hibernate.connection.driver_class">org.apache.derby.jdbc.ClientDriver</property>
+        <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
         <!-- <property name="hibernate.connection.url">jdbc:derby:/home/toyan/MyDB;create=true</property>  -->
-        <property name="hibernate.connection.url">jdbc:derby://localhost:1527/MyDB;create=true</property>
+        <property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>
         <property name="hibernate.connection.username">toyan</property>
         <property name="hibernate.connection.password">turpleP420</property>
         <property name="hibernate.connection.pool_size">1</property>
         <property name="hibernate.current_session_context_class">thread</property>
-        <property name="hibernate.default_schema">YODA</property>
         <property name="hibernate.show_sql">true</property>
-        <property name="hibernate.dialect">org.hibernate.dialect.DerbyDialect</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.OracleDialect</property>
         <property name="hibernate.hbm2ddl.auto">create</property>
         <mapping class="org.tutorial.rest.messenger.model.Message" />
         <mapping class="org.tutorial.rest.messenger.model.Profile" />
