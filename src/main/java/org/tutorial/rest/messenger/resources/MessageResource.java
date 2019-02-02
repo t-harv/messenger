@@ -34,9 +34,20 @@ public class MessageResource {
 	}
 	
 	
+	
+	@GET
+	@Path("/test")
+	@Produces(MediaType.APPLICATION_JSON)
+	public String test() {	
+		return "What it is :O!";
+	}
+	
+	
 	@POST
 	public Message addMessage(Message message){
+//		public String addMessage(){
 		return messageService.addMessage(message);
+//		return "POST WORKS!";
 	}
 	
 	
